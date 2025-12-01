@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-Only Calculator</title>
+  <style>
+    input[type="radio"] { display: none; }
+    label { cursor: pointer; padding: 10px; display: inline-block; background: #eee; margin: 2px; }
+    #result { display: block; margin-top: 20px; font-size: 24px; }
+    input[type="radio"]:checked + label { background: #ccc; }
+  </style>
+</head>
+<body>
+  <h1>HTML Calculator</h1>
+
+  <!-- Number Inputs -->
+  <input type="number" id="num1" value="0">
+  <input type="number" id="num2" value="0">
+
+  <!-- Operation Selection -->
+  <div>
+    <input type="radio" id="add" name="op">
+    <label for="add">+</label>
+
+    <input type="radio" id="sub" name="op">
+    <label for="sub">−</label>
+
+    <input type="radio" id="mul" name="op">
+    <label for="mul">×</label>
+
+    <input type="radio" id="div" name="op">
+    <label for="div">÷</label>
+  </div>
+
+  <!-- Result Display -->
+  <div id="result">Result: (Pretend it's working 😅)</div>
+</body>
+</html>
